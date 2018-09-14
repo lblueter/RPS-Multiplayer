@@ -20,14 +20,17 @@
         <div class="row text-center border">
             <div class="col-5">
                 <p>You Picked</p>
-                <img src="https://via.placeholder.com/150x150">
+                <img id="youPicked" src="https://via.placeholder.com/150x150">
             </div>
             <div class="col-2">
-                <h2>-=VS=-</h2>
+                <p id="wins">Wins: 0</p>
+                <p id="losses">Losses: 0</p>
+                <h2>=VS=</h2>
+                <p id="win-lose">Win!/Lose!</p>
             </div>
             <div class="col-5">
                 <p>They Picked</p>
-                <img src="https://via.placeholder.com/150x150">
+                <img id="theyPicked" src="https://via.placeholder.com/150x150">
             </div>
         </div>
         <div class="row text-center">
@@ -37,15 +40,15 @@
         </div>
         <div class="row text-center border">
             <div class="col-4">
-                <img src="https://via.placeholder.com/150x150">
+                <img id="choice" data-type="rock" src="assets/images/rock_1_200x200.png">
                 <p>Rock</p>
             </div>
             <div class="col-4">
-                <img src="https://via.placeholder.com/150x150">
+                <img id="choice" data-type="paper" src="assets/images/paper_200x200.png">
                 <p>Paper</p>
             </div>
             <div class="col-4">
-                <img src="https://via.placeholder.com/150x150">
+                <img id="choice" data-type="scissors" src="assets/images/scissors_200x200.png">
                 <p>Scissors</p>
             </div>
         </div>
@@ -54,7 +57,7 @@
                 <textarea id="message" name="message"></textarea>
                 <form>
                     <input id="textinput" type="text" placeholder="Send Message...">
-                    <button class="btn btn-secondary" type="button">Send</button>
+                    <button id="sendBtn" class="btn btn-secondary" type="button">Send</button>
                 </form>
             </div>
         </div>
